@@ -1,0 +1,26 @@
+.nav {
+    width: 100%;
+    height: 80px;
+}
+
+.navbar {
+    transition: all ease-in-out 0.25s;
+    position: fixed !important;
+    width: 100%;
+    height: 80px;
+}
+
+.logo {
+    position: fixed;
+    top: -23px;
+    left: 10px;
+    height: 130px;
+}
+
+.avatar {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+
+    height: 60px;
+}
