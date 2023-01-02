@@ -22,7 +22,6 @@ function Header() {
   }, []);
   
   return (
-    <div className={`${styles.nav}`}>
       <div className={`${styles.navbar} ${scrolling && "background__black"}`}>
         <Link to={`/`}>
           <img
@@ -39,7 +38,6 @@ function Header() {
           />
         </Link>
       </div>
-    </div>
   );
 }
 

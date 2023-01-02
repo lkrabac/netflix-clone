@@ -15,7 +15,7 @@
     position: fixed;
     top: -23px;
     left: 10px;
-    height: 130px;
+    height: 100px;
 }
 
 .avatar {
@@ -23,5 +23,5 @@
     right: 10px;
     top: 10px;
 
-    height: 60px;
+    height: 50px;
 }

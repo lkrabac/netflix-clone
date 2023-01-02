@@ -1,8 +1,28 @@
 import React from 'react'
+import {useState, useEffect} from 'react';
 
 import styles from './Banner.module.css';
 
+import requests from '../../axios.request';
+import axios from '../../axios.config';
+
 export const Banner = () => {
+    const [movie, setMovie] = useState([]);
+
+    useEffect(() => {
+      async function fetchMovies() {
+        const request = await axios.get(requests.fetchNetflixOriginals);
+        console.log(request);
+        setMovie(
+          request.data.results[
+            Math.floor(Math.random() * request.data.results.length - 1)
+          ]
+        );
+        return request;
+      }
+      fetchMovies();
+    }, []);
+
   return (
     <div className={styles.banner__wrapper}>
       <div className={styles.content__wrapper}>
