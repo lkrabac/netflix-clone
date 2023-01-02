@@ -11,6 +11,11 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: black;
+  color: white;
+
+  padding: 10px;
 }
 
 .background__black {
