@@ -2,13 +2,13 @@ const requests = {
   fetchTrending:
     "/trending/all/week?api_key=" +
     process.env.REACT_APP_MOVIES_API_KEY +
-    "&laungage=en-US",
+    "&laungage=sk-SK",
   fetchNetflixOriginals:
     "/discover/tv?api_key=" + process.env.REACT_APP_MOVIES_API_KEY + "&with_networks=213",
   fetchTopRated:
     "/movie/top_rated?api_key=" +
     process.env.REACT_APP_MOVIES_API_KEY +
-    "&laungage=en-US",
+    "&laungage=sk-SK",
   fetchActionMovies:
     "/discover/movie?api_key=" +
     process.env.REACT_APP_MOVIES_API_KEY +
